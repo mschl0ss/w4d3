@@ -1,0 +1,24 @@
+
+<h1>Login to the cat trading market.  Which is weird.</h1>
+
+<form action = "<%= session_url %>" method="POST">
+  <input type="hidden" name="authenticity_token" value = "<%= form_authenticity_token  %>">
+
+  
+  <!-- username -->
+  <label>Username:
+    <input type="text" name="user[user_name]" value="<%= @user.user_name %>">
+  </label>
+
+  <br>
+  <!-- password -->
+  <label>Password:
+    <input type="password" name="user[password]" value= "<%= @user.password %>" >
+  </label>
+
+  <br>
+
+  <input type="submit" value="renting living things is wrong, but go ahead bro">
+
+
+</form>
